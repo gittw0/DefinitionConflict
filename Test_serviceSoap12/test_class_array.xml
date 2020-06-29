@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="1d80ccbc-63fa-483c-832c-3ba7f60bca92" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_class_array" name="test_class_array" bindingOperationName="test_class_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="1d80ccbc-63fa-483c-832c-3ba7f60bca92fileName">test_class_array</con:setting>
+  </con:settings>
+  <con:call id="db1aeb20-bd71-43b8-90e5-5a08567d28d3" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_class_array/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_class_arrayRequest"/>
+  </con:call>
+</con:operation>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="c412804d-5319-4e21-9ea8-e919278ea6bd" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_ulong" name="test_ulong" bindingOperationName="test_ulong" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c412804d-5319-4e21-9ea8-e919278ea6bdfileName">test_ulong</con:setting>
+  </con:settings>
+  <con:call id="9d2bfc62-120b-40f9-8c42-bac714e03421" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <ser:test_ulong/>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/test_ulong"/>
+  </con:call>
+</con:operation>

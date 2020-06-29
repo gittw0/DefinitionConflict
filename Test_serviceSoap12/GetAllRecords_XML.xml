@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="40101dbe-6131-428c-9039-2d3227ba0fee" isOneWay="false" action="http://localhost/test_service/Service1.asmx/GetAllRecords_XML" name="GetAllRecords_XML" bindingOperationName="GetAllRecords_XML" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="40101dbe-6131-428c-9039-2d3227ba0feefileName">GetAllRecords_XML</con:setting>
+  </con:settings>
+  <con:call id="5b660bb5-428b-43ec-92df-a45df0181a8c" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:GetAllRecords_XML/>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/GetAllRecords_XMLRequest"/>
+  </con:call>
+</con:operation>

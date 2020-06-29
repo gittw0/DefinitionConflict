@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:operation id="f2e686c4-bc7b-436a-984c-dbf60cda6776" isOneWay="false" action="http://localhost/test_service/Service1.asmx/test_class_array_input_array" name="test_class_array_input_array" bindingOperationName="test_class_array_input_array" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="f2e686c4-bc7b-436a-984c-dbf60cda6776fileName">test_class_array_input_array</con:setting>
+  </con:settings>
+  <con:call id="04d56570-61f8-463d-8a07-4cf95431c696" name="Request 1">
+    <con:settings/>
+    <con:encoding>UTF-8</con:encoding>
+    <con:endpoint>http://rapis02.aqa.com.ru/SOAP/Service1.asmx</con:endpoint>
+    <con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:ser="http://localhost/test_service/Service1.asmx">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <ser:test_class_array_input_array>\r
+         <!--Optional:-->\r
+         <ser:tt>\r
+            <!--Zero or more repetitions:-->\r
+            <ser:test>\r
+               <ser:test_int>?</ser:test_int>\r
+               <!--Optional:-->\r
+               <ser:test_string>?</ser:test_string>\r
+               <!--Optional:-->\r
+               <ser:test_transfer_array>?</ser:test_transfer_array>\r
+               <!--Optional:-->\r
+               <ser:test_array>\r
+                  <!--Zero or more repetitions:-->\r
+                  <ser:int>?</ser:int>\r
+               </ser:test_array>\r
+            </ser:test>\r
+         </ser:tt>\r
+      </ser:test_class_array_input_array>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request>
+    <con:wsaConfig mustUnderstand="NONE" version="200508" action="http://localhost/test_service/Service1.asmx/Test_serviceSoap/test_class_array_input_arrayRequest"/>
+  </con:call>
+</con:operation>
